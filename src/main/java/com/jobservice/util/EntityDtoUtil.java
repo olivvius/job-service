@@ -5,7 +5,9 @@ import com.fasterxml.jackson.databind.util.BeanUtil;
 import com.jobservice.dto.JobDto;
 import com.jobservice.entity.Job;
 import org.springframework.beans.BeanUtils;
+import org.springframework.stereotype.Component;
 
+@Component
 public class EntityDtoUtil {
 
     public JobDto toDto(Job job){
