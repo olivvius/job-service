@@ -1,21 +1,23 @@
 package com.jobservice.dto;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Set;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor(staticName = "create")
+@Builder
 public class JobDto {
+
     private String id;
     private String description;
     private String company;
-    private Set<String> Skills;
+    private Set<String> skills;
     private Integer salary;
     private Boolean isRemote;
+
 
 }
